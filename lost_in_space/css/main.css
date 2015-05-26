@@ -1,0 +1,134 @@
+@font-face {
+    font-family: digitalDream;
+    src: url(../fonts/Digital-dream/DIGITALDREAM.ttf);
+}
+
+body {
+	font-family: digitalDream;
+	color: #fff;
+}
+
+canvas {
+	position: absolute;
+	z-index: 500;
+	top: 0px;
+	left: 0px;
+	background: #000;
+	/* border: 1px solid black; */
+}
+
+#canvas_game {
+	position: absolute;
+	z-index: 600;
+	top: 0px;
+	left: 0px;
+	background: transparent;
+	/* border: 1px solid black; */
+}
+
+#canvas_explosion {
+	position: absolute;
+	z-index: 700;
+	top: 0px;
+	left: 0px;
+	background: transparent;
+	/* border: 1px solid black; */
+}
+
+#score {
+	position: absolute;
+	z-index: 400;
+	top: 10px;
+	left: 10px;
+	/* border: 1px solid black; */
+}
+
+#startGame:hover {
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+#instruction:hover {
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+#credits:hover {
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+#instructionPage {
+	position: absolute;
+	z-index: 400;
+	top: 100px;
+	left: 120px;
+	/* border: 1px solid black; */
+}
+
+#creditsPage {
+	position: absolute;
+	z-index: 400;
+	top: 140px;
+	left: 80px;
+	/* border: 1px solid black; */
+}
+
+#creditsBackToMenu:hover {
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+#instructionBackToMenu:hover {
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+#playAgain:hover {
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+#playAgainHolder {
+	position: absolute;
+	z-index: 400;
+	top: 160px;
+	left: 200px;
+	/* border: 1px solid black; */
+}
+
+#playGameBackToMenu:hover {
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+#startMenuHolder {
+	position: absolute;
+	z-index: 400;
+	top: 160px;
+	left: 200px;
+	/* border: 1px solid black; */
+}
+
+#headline {
+	font-size: 25pt;
+	position: absolute;
+	z-index: 400;
+	top: 100px;
+	left: 140px;
+}
+
+#informer {
+	font-size: 14pt;
+	position: absolute;
+	z-index: 400;
+	top: 160px;
+	left: 25px;
+}

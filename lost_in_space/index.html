@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lost In Space</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="scripts/externals/jquery/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="scripts/externals/underscore/underscore.js"></script>
+	<script type="text/javascript" src="scripts/externals/howler/howler.min.js"></script>
+	<script type="text/javascript" src="scripts/externals/browser/jquery.browser.js"></script>
+</head>
+<body>
+	<!-- The canvas for the panning background -->
+	<canvas id="canvas_background" width="600" height="400">
+		Your browser does not support canvas. Please try again with a different browser.
+	</canvas>
+	<!-- The canvas for the game -->
+	<canvas id="canvas_game" width="600" height="400">
+		Your browser does not support canvas. Please try again with a different browser.
+	</canvas>
+	<!-- The canvas for the game -->
+	<canvas id="canvas_explosion" width="600" height="400">
+		Your browser does not support canvas. Please try again with a different browser.
+	</canvas>
+
+	<!-- score -->
+	<div id="score" style="padding-top: 1px;"></div>
+
+	<!-- headline -->
+	<div id="headline">LOST IN SPACE</div>
+
+	<!-- informer -->
+	<div id="informer">FIND THE WAY BACK TO YOUR MOTHERSHIP</div>
+
+	<!-- start menu -->
+	<div id="startMenuHolder">
+		<div style="padding-top: 1px;">HIGH SCORE:<span style="display: inline-block;width: 5px;"></span><span id="highScore"></span></div>
+		<div style="height: 20px;"></div>
+		<div><span id="startGame">START GAME</span></div>
+		<div style="height: 10px;"></div>
+		<div><span id="instruction">INSTRUCTION</span></div>
+		<div style="height: 10px;"></div>
+		<div><span id="credits">CREDITS</span></div>
+	</div>
+
+	<!-- play again menu -->
+	<div id="playAgainHolder">
+		<div style="padding-top: 1px;">END SCORE:<span style="display: inline-block;width: 5px;"></span><span id="endScore"></span></div>
+		<div style="height: 20px;"></div>
+		<div><span id="playAgain">PLAY AGAIN</span></div>
+		<div style="height: 10px;"></div>
+		<div><span id="playGameBackToMenu">BACK TO MENU</span></div>
+	</div>
+
+	<!-- instruction page -->
+	<div id="instructionPage">
+		<div style="padding-bottom: 10px;padding-top: 1px;">A OR J<span style="display: inline-block;width: 102px;"></span>= MOVE LEFT</div>
+		<div style="padding-bottom: 10px;">D OR L<span style="display: inline-block;width: 102px;"></span>= MOVE RIGHT</div>
+		<div style="padding-bottom: 10px;">W OR I<span style="display: inline-block;width: 102px;"></span>= MOVE FORWARD</div>
+		<div style="padding-bottom: 10px;">S OR K<span style="display: inline-block;width: 102px;"></span>= MOVE BACKWARD</div>
+		<div style="padding-bottom: 20px;">SPACEBAR<span style="display: inline-block;width: 77px;"></span>= FIRE BUTTON</div>
+		<div><span id="instructionBackToMenu">BACK TO MENU</span></div>
+	</div>
+
+	<!-- credits page -->
+	<div id="creditsPage">
+		<div style="padding-top: 1px;"><span>GAME DEVELOPMENT:</span><span style="display: inline-block;width: 40px;"></span>ULF ZACKRISSON</div>
+		<div style="height: 10px;"></div>
+		<div><span>BACKGROUND MUSIC:</span><span style="display: inline-block;width: 40px;"></span>JAN125</div>
+		<div style="height: 20px;"></div>
+		<div><span id="creditsBackToMenu">BACK TO MENU</span></div>
+	</div>
+
+	<script type="text/javascript" src="scripts/menues.js"></script>
+	<script type="text/javascript" src="scripts/spaceShooterNamespace.js"></script>
+	<script type="text/javascript" src="scripts/base64encoded_images.js"></script>
+	<script type="text/javascript" src="scripts/canvas.js"></script>
+	<script type="text/javascript" src="scripts/background.js"></script>
+	<script type="text/javascript" src="scripts/propulsion.js"></script>
+	<script type="text/javascript" src="scripts/ships.js"></script>
+	<script type="text/javascript" src="scripts/explosions.js"></script>
+	<script type="text/javascript" src="scripts/enemies.js"></script>
+	<script type="text/javascript" src="scripts/asteroids.js"></script>
+	<script type="text/javascript" src="scripts/shot.js"></script>
+	<script type="text/javascript" src="scripts/enemy_shot.js"></script>
+	<script type="text/javascript" src="scripts/collisions.js"></script>
+	<script type="text/javascript" src="scripts/base64encoded_sounds.js"></script>
+	<script type="text/javascript" src="scripts/sounds.js"></script>
+	<script type="text/javascript" src="scripts/level1.js"></script>
+	<script type="text/javascript" src="scripts/game.js"></script>
+</body>
+</html>
